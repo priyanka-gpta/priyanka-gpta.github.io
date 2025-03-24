@@ -117,41 +117,15 @@ section {
 }
 
 .page-title {
-    font-size: 48px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    margin-bottom: 20px;
     font-weight: 800;
 }
 
 .section-title {
     font-size: 28px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-weight: 700;
-}
-
-/* Blog entries */
-.blog-entries {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.entry {
-    display: flex;
-    align-items: baseline;
-}
-
-.date {
-    width: 120px;
-    color: #666;
-    font-size: 16px;
-}
-
-.dark-mode .date {
-    color: #999;
-}
-
-.title {
-    font-size: 18px;
 }
 
 /* Creative Showcase Styles */
@@ -326,194 +300,575 @@ section {
     }
 }
 
-        /* Experience page specific styles */
-        .experience-section {
-            margin-bottom: 50px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        
-        .experience-section:last-child {
-            border-bottom: none;
-        }
-        
-        .job-header {
-            margin-bottom: 20px;
-        }
-        
-        .job-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-        
-        .company {
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 5px;
-        }
-        
-        .job-meta {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-            font-size: 16px;
-            color: #666;
-        }
-        
-        .dark-mode .job-meta {
-            color: #999;
-        }
-        
-        .job-description {
-            margin-bottom: 20px;
-        }
-        
-        .achievement-list {
-            margin-left: 25px;
-        }
-        
-        .achievement-list li {
-            margin-bottom: 15px;
-            position: relative;
-        }
-        
-        .achievement-list li::before {
-            content: "•";
-            position: absolute;
-            left: -18px;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-        
-        .achievement-sub-list {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-        
-        .achievement-sub-list li {
-            margin-bottom: 10px;
-        }
-        
-        .achievement-sub-list li::before {
-            content: "○";
-            left: -15px;
-        }
-        
-        .highlight {
-            font-weight: 600;
-            color: var(--text-color);
-        }
-        
-        .skills-section {
-            margin-top: 60px;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .skill-tag {
-            background-color: rgba(0, 82, 204, 0.08);
-            color: var(--primary-color);
-            padding: 8px 15px;
-            border-radius: 20px;
-            display: inline-block;
-            font-weight: 500;
-            text-align: center;
-        }
-        
-        .dark-mode .skill-tag {
-            background-color: rgba(77, 151, 255, 0.15);
-        }
-        
-        .projects-section {
-            margin-top: 60px;
-        }
-        
-        .project-item {
-            margin-bottom: 30px;
-            padding: 20px;
-            border-radius: 8px;
-            background-color: rgba(0, 0, 0, 0.02);
-        }
-        
-        .dark-mode .project-item {
-            background-color: rgba(255, 255, 255, 0.03);
-        }
-        
-        .project-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-        
-        .project-year {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 10px;
-        }
-        
-        .dark-mode .project-year {
-            color: #999;
-        }
-        
-        .education-section {
-            margin-top: 60px;
-        }
-        
-        .education-item {
-            margin-bottom: 30px;
-        }
-        
-        .degree {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-        
-        .institution {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-        
-        .education-year {
-            font-size: 16px;
-            color: #666;
-        }
-        
-        .dark-mode .education-year {
-            color: #999;
-        }
-        
-        .achievements-section {
-            margin-top: 60px;
-        }
-        
-        .achievement-item {
-            margin-bottom: 25px;
-        }
-        
-        .achievement-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        
-        @media (max-width: 768px) {
-            .job-meta {
-                flex-direction: column;
-            }
-            
-            .job-meta .location {
-                margin-top: 5px;
-            }
-            
-            .skills-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            }
-        }
+/* Blog Page Specific Styles */
+.page-banner {
+    background-color: #f8f7e9;
+    color: #222;
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.dark-mode .page-banner {
+    background-color: #2a2a20;
+    color: #f1f1e9;
+}
+
+.banner-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.page-intro {
+    margin-bottom: 40px;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tag {
+    background-color: rgba(0, 82, 204, 0.08);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    background-color: rgba(0, 82, 204, 0.15);
+}
+
+.tag.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.dark-mode .tag {
+    background-color: rgba(77, 151, 255, 0.15);
+}
+
+.dark-mode .tag:hover {
+    background-color: rgba(77, 151, 255, 0.25);
+}
+
+.dark-mode .tag.active {
+    background-color: var(--primary-color);
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.blog-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.dark-mode .blog-row {
+    border-bottom-color: #333;
+}
+
+.blog-row:last-child {
+    border-bottom: none;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.post-title:hover {
+    color: var(--primary-color);
+}
+
+.post-excerpt {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.post-date {
+    font-size: 14px;
+    color: #777;
+}
+
+.dark-mode .post-date {
+    color: #999;
+}
+
+.post-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.post-tag {
+    font-size: 12px;
+    padding: 3px 8px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    color: #666;
+}
+
+.dark-mode .post-tag {
+    background: rgba(255, 255, 255, 0.1);
+    color: #aaa;
+}
+
+/* Minimalist style based on attachment */
+.minimalist-blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.minimalist-post {
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.dark-mode .minimalist-post {
+    border-bottom-color: #333;
+}
+
+.minimalist-post:last-child {
+    border-bottom: none;
+}
+
+.minimalist-post-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.minimalist-post-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-decoration: none;
+    flex-grow: 1;
+    padding-right: 20px;
+    line-height: 1.3;
+}
+
+.minimalist-post-title:hover {
+    color: var(--primary-color);
+}
+
+.minimalist-post-date {
+    font-size: 14px;
+    color: #777;
+    flex-shrink: 0;
+    text-align: right;
+    padding-top: 5px;
+}
+
+.dark-mode .minimalist-post-date {
+    color: #999;
+}
+
+.minimalist-post-excerpt {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.minimalist-post-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .blog-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .banner-title {
+        font-size: 28px;
+    }
+    
+    .minimalist-post-header {
+        flex-direction: column;
+    }
+    
+    .minimalist-post-title {
+        padding-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .minimalist-post-date {
+        text-align: left;
+        padding-top: 0;
+    }
+}
+
+/* Experience page specific styles */
+.experience-section {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.experience-section:last-child {
+    border-bottom: none;
+}
+
+.job-header {
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.company {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.job-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+.dark-mode .job-meta {
+    color: #999;
+}
+
+.job-description {
+    margin-bottom: 20px;
+}
+
+.achievement-list {
+    margin-left: 25px;
+}
+
+.achievement-list li {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.achievement-list li::before {
+    content: "•";
+    position: absolute;
+    left: -18px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.achievement-sub-list {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.achievement-sub-list li {
+    margin-bottom: 10px;
+}
+
+.achievement-sub-list li::before {
+    content: "○";
+    left: -15px;
+}
+
+.highlight {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.skills-section {
+    margin-top: 60px;
+}
+
+.skills-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.skills-table td {
+    padding: 10px 5px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 16px;
+}
+
+.skills-table tr:last-child td {
+    border-bottom: none;
+}
+
+.skill-item {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .skills-table td {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+    
+    .skills-table tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.projects-section {
+    margin-top: 60px;
+}
+
+.project-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.dark-mode .project-item {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.project-year {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.dark-mode .project-year {
+    color: #999;
+}
+
+.education-section {
+    margin-top: 60px;
+}
+
+.education-item {
+    margin-bottom: 30px;
+}
+
+.degree {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.institution {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.education-year {
+    font-size: 16px;
+    color: #666;
+}
+
+.dark-mode .education-year {
+    color: #999;
+}
+
+.achievements-section {
+    margin-top: 60px;
+}
+
+.achievement-item {
+    margin-bottom: 25px;
+}
+
+.achievement-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .job-meta {
+        flex-direction: column;
+    }
+    
+    .job-meta .location {
+        margin-top: 5px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+/* POW Page Specific Styles */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tag {
+    background-color: rgba(0, 82, 204, 0.08);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    background-color: rgba(0, 82, 204, 0.15);
+}
+
+.tag.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.dark-mode .tag {
+    background-color: rgba(77, 151, 255, 0.15);
+}
+
+.dark-mode .tag:hover {
+    background-color: rgba(77, 151, 255, 0.25);
+}
+
+.dark-mode .tag.active {
+    background-color: var(--primary-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .project-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .project-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.dark-mode .project-date {
+    color: #999;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.project-description {
+    margin-bottom: 15px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.project-tag {
+    font-size: 12px;
+    background-color: rgba(0, 82, 204, 0.08);
+    color: var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.dark-mode .project-tag {
+    background-color: rgba(77, 151, 255, 0.15);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
