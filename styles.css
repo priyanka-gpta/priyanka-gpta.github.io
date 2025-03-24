@@ -1,0 +1,519 @@
+/* Base styles */
+:root {
+    --primary-color: #0052cc;
+    --text-color: #121212;
+    --bg-color: #ffffff;
+    --header-bg: #ffffff;
+    --border-color: #e5e5e5;
+    --link-hover: #003d99;
+}
+
+.dark-mode {
+    --primary-color: #4d97ff;
+    --text-color: #f0f0f0;
+    --bg-color: #121212;
+    --header-bg: #1a1a1a;
+    --border-color: #333333;
+    --link-hover: #80b3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+/* Header styles */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--header-bg);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h1 a {
+    color: var(--text-color);
+}
+
+h1 a:hover {
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode #theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main content styles */
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.page-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Blog entries */
+.blog-entries {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.entry {
+    display: flex;
+    align-items: baseline;
+}
+
+.date {
+    width: 120px;
+    color: #666;
+    font-size: 16px;
+}
+
+.dark-mode .date {
+    color: #999;
+}
+
+.title {
+    font-size: 18px;
+}
+
+/* Creative Showcase Styles */
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.showcase-section {
+    margin-bottom: 20px;
+}
+
+/* Art Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.art-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.item-title {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Stories */
+.story-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.story-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.story-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.story-excerpt {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.read-more {
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Audio */
+.audio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.audio-item {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+}
+
+.dark-mode .audio-item {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.audio-info {
+    margin-bottom: 15px;
+}
+
+.audio-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.audio-description {
+    color: #666;
+    font-size: 14px;
+}
+
+.dark-mode .audio-description {
+    color: #aaa;
+}
+
+.audio-player audio {
+    width: 100%;
+}
+
+/* View More Links */
+.view-more {
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Page specific styles */
+.page-content {
+    max-width: 700px;
+    line-height: 1.8;
+}
+
+.page-content h3 {
+    font-size: 24px;
+    margin: 30px 0 15px;
+}
+
+.page-content p {
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .page-title {
+        font-size: 36px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .entry {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    
+    .date {
+        width: auto;
+        margin-bottom: 5px;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .audio-item {
+        padding: 15px;
+    }
+    
+    .story-title, .audio-title {
+        font-size: 18px;
+    }
+}
+
+        /* Experience page specific styles */
+        .experience-section {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .experience-section:last-child {
+            border-bottom: none;
+        }
+        
+        .job-header {
+            margin-bottom: 20px;
+        }
+        
+        .job-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .job-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .dark-mode .job-meta {
+            color: #999;
+        }
+        
+        .job-description {
+            margin-bottom: 20px;
+        }
+        
+        .achievement-list {
+            margin-left: 25px;
+        }
+        
+        .achievement-list li {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .achievement-list li::before {
+            content: "•";
+            position: absolute;
+            left: -18px;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .achievement-sub-list {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .achievement-sub-list li {
+            margin-bottom: 10px;
+        }
+        
+        .achievement-sub-list li::before {
+            content: "○";
+            left: -15px;
+        }
+        
+        .highlight {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .skills-section {
+            margin-top: 60px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .skill-tag {
+            background-color: rgba(0, 82, 204, 0.08);
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .dark-mode .skill-tag {
+            background-color: rgba(77, 151, 255, 0.15);
+        }
+        
+        .projects-section {
+            margin-top: 60px;
+        }
+        
+        .project-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        
+        .dark-mode .project-item {
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+        
+        .project-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .project-year {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .dark-mode .project-year {
+            color: #999;
+        }
+        
+        .education-section {
+            margin-top: 60px;
+        }
+        
+        .education-item {
+            margin-bottom: 30px;
+        }
+        
+        .degree {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .institution {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .education-year {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .dark-mode .education-year {
+            color: #999;
+        }
+        
+        .achievements-section {
+            margin-top: 60px;
+        }
+        
+        .achievement-item {
+            margin-bottom: 25px;
+        }
+        
+        .achievement-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .job-meta {
+                flex-direction: column;
+            }
+            
+            .job-meta .location {
+                margin-top: 5px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
