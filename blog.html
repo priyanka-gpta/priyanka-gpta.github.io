@@ -3,158 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Priyanka Gupta</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Priyanka Gupta</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <h1><a href="index.html">Priyanka Gupta</a></h1>
-                <button id="theme-toggle" aria-label="Toggle dark/light mode">
-                    🌙
-                </button>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="experience.html">Work Experience</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="art.html">Art</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a href="index.html" class="site-title">Priyanka Gupta</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Thoughts</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><button class="theme-toggle" id="theme-toggle">🌓</button></li>
+            </ul>
+        </nav>
     </header>
+    
+    <h1>Thoughts & Notes</h1>
+        <p>A chronological archive of my thoughts, notes, and observations.</p>
 
-    <div class="page-banner">
-        <div class="container">
-            <h2 class="banner-title">thoughts, observations and..</h2>
+        <!-- Search box -->
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Search thoughts...">
+            <span class="search-icon">🔍</span>
         </div>
-    </div>
 
-    <main>
-        <div class="container">
-            <div class="page-content">
-                <div class="tags-container">
-                    <div class="tag active">All</div>
-                    <div class="tag">Product</div>
-                    <div class="tag">Work</div>
-                    <div class="tag">Society</div>
-                    <div class="tag">Technology</div>
-                    <div class="tag">AI</div>
-                    <div class="tag">Startups</div>
-                </div>
-                
-                <div class="minimalist-blog-container">
-                    <div class="minimalist-post" data-tags="Product,Work">
-                        <div class="minimalist-post-header">
-                            <a href="#" class="minimalist-post-title">closing projects</a>
-                            <div class="minimalist-post-date">SEP 1, 2024</div>
+        <!-- 2025 -->
+        <div class="year-section expanded">
+            <div class="year-header">
+                <h2>2025</h2>
+                <span class="year-toggle">▼</span>
+            </div>
+            <div class="year-content">
+                <ul class="article-list">
+                    <li class="article-item">
+                        <div class="article-meta">
+                            Mar 30
                         </div>
-                        <div class="minimalist-post-excerpt">"Let's just finish the pending work." "But closing this and splitting it into a separate project gives us a chance to evaluate what we've learned so far."</div>
-                        <div class="minimalist-post-tags">
-                            <span class="post-tag">Product</span>
-                            <span class="post-tag">Work</span>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="#">On Digital Minimalism</a>
+                            </h3>
+                            <div class="article-tags">
+                                <span class="article-tag">Productivity</span>
+                                <span class="article-tag">Mindfulness</span>
+                            </div>
+                            <div class="article-summary">
+                                Being intentional with technology use to support values and goals.
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="minimalist-post" data-tags="Society">
-                        <div class="minimalist-post-header">
-                            <a href="#" class="minimalist-post-title">not being used to privilege</a>
-                            <div class="minimalist-post-date">AUG 30, 2024</div>
+                    </li>
+                    <li class="article-item">
+                        <div class="article-meta">
+                            Mar 27
                         </div>
-                        <div class="minimalist-post-excerpt">"So, you're just going to drive me around?" she asked the driver. "Yes, ma'am," the driver responded. She was uncomfortable with the idea.</div>
-                        <div class="minimalist-post-tags">
-                            <span class="post-tag">Society</span>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="#">Learning by Teaching</a>
+                            </h3>
+                            <div class="article-tags">
+                                <span class="article-tag">Learning</span>
+                                <span class="article-tag">Education</span>
+                            </div>
+                            <div class="article-summary">
+                                How explaining concepts to others deepens your own understanding.
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="minimalist-post" data-tags="Work">
-                        <div class="minimalist-post-header">
-                            <a href="#" class="minimalist-post-title">surviving probation</a>
-                            <div class="minimalist-post-date">AUG 29, 2024</div>
+                    </li>
+                    <li class="article-item">
+                        <div class="article-meta">
+                            Mar 24
                         </div>
-                        <div class="minimalist-post-excerpt">"Time for your probation review," his manager said. He laughed, "Probation review? I thought that was just a formality." Narrator: It wasn't.</div>
-                        <div class="minimalist-post-tags">
-                            <span class="post-tag">Work</span>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="#">Book Notes: Atomic Habits</a>
+                            </h3>
+                            <div class="article-tags">
+                                <span class="article-tag">Books</span>
+                                <span class="article-tag">Habits</span>
+                            </div>
+                            <div class="article-summary">
+                                Key insights from James Clear's book on habit formation and behavior change.
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="minimalist-post" data-tags="Work">
-                        <div class="minimalist-post-header">
-                            <a href="#" class="minimalist-post-title">doing too much</a>
-                            <div class="minimalist-post-date">AUG 28, 2024</div>
+                    </li>
+                    <li class="article-item">
+                        <div class="article-meta">
+                            Mar 20
                         </div>
-                        <div class="minimalist-post-excerpt">"Hey, you need to dial it back," one of them said. "Yeah, seriously, you're making the rest of us look bad." They weren't joking.</div>
-                        <div class="minimalist-post-tags">
-                            <span class="post-tag">Work</span>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="#">Working With The Garage Door Up</a>
+                            </h3>
+                            <div class="article-tags">
+                                <span class="article-tag">Process</span>
+                                <span class="article-tag">Creativity</span>
+                            </div>
+                            <div class="article-summary">
+                                The benefits of sharing work in progress and building in public.
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="minimalist-post" data-tags="Work,Startups">
-                        <div class="minimalist-post-header">
-                            <a href="#" class="minimalist-post-title">expecting a bonus</a>
-                            <div class="minimalist-post-date">AUG 27, 2024</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="year-section">
+            <div class="year-header">
+                <h2>2024</h2>
+                <span class="year-toggle">▼</span>
+            </div>
+            <div class="year-content">
+                <ul class="article-list">
+                    <li class="article-item">
+                        <div class="article-meta">
+                            Dec 15
                         </div>
-                        <div class="minimalist-post-excerpt">"You know, discretionary means I don't have to pay it, right?" He stared, "But... it's an expectation you set." The CFO looked away.</div>
-                        <div class="minimalist-post-tags">
-                            <span class="post-tag">Work</span>
-                            <span class="post-tag">Startups</span>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="#">Year in Review: 2024</a>
+                            </h3>
+                            <div class="article-tags">
+                                <span class="article-tag">Reflection</span>
+                                <span class="article-tag">Personal</span>
+                            </div>
+                            <div class="article-summary">
+                                Reflecting on accomplishments, challenges, and lessons from the past year.
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="minimalist-post" data-tags="Product,Startups">
-                        <div class="minimalist-post-header">
-                            <a href="#" class="minimalist-post-title">suggesting crazy ideas</a>
-                            <div class="minimalist-post-date">AUG 26, 2024</div>
+                    </li>
+                    <li class="article-item">
+                        <div class="article-meta">
+                            Nov 20
                         </div>
-                        <div class="minimalist-post-excerpt">"Give me ideas, people—the crazier, the better." "So, what if we launch our next product without any features?" The room went silent.</div>
-                        <div class="minimalist-post-tags">
-                            <span class="post-tag">Product</span>
-                            <span class="post-tag">Startups</span>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="#">The Evolution of Web Typography</a>
+                            </h3>
+                            <div class="article-tags">
+                                <span class="article-tag">Design</span>
+                                <span class="article-tag">Typography</span>
+                            </div>
+                            <div class="article-summary">
+                                How web typography has changed and best practices for 2025 and beyond.
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="minimalist-post" data-tags="AI,Technology">
-                        <div class="minimalist-post-header">
-                            <a href="#" class="minimalist-post-title">Google's agentic future</a>
-                            <div class="minimalist-post-date">MAR 20, 2025</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="year-section">
+            <div class="year-header">
+                <h2>2023</h2>
+                <span class="year-toggle">▼</span>
+            </div>
+            <div class="year-content">
+                <ul class="article-list">
+                    <li class="article-item">
+                        <div class="article-meta">
+                            Dec 30
                         </div>
-                        <div class="minimalist-post-excerpt">When Google's products start acting more like your assistant than your tools, we'll see a fundamental shift in how we interact with technology.</div>
-                        <div class="minimalist-post-tags">
-                            <span class="post-tag">AI</span>
-                            <span class="post-tag">Technology</span>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="#">Starting a Digital Garden</a>
+                            </h3>
+                            <div class="article-tags">
+                                <span class="article-tag">Writing</span>
+                                <span class="article-tag">Web</span>
+                            </div>
+                            <div class="article-summary">
+                                My approach to creating an interconnected collection of evolving notes.
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="minimalist-post" data-tags="Product,Work">
-                        <div class="minimalist-post-header">
-                            <a href="#" class="minimalist-post-title">Best time to be a growth PM</a>
-                            <div class="minimalist-post-date">MAR 15, 2025</div>
-                        </div>
-                        <div class="minimalist-post-excerpt">The convergence of AI tools, rich analytics, and lean methodologies has made this the golden age for growth-focused product managers.</div>
-                        <div class="minimalist-post-tags">
-                            <span class="post-tag">Product</span>
-                            <span class="post-tag">Work</span>
-                        </div>
-                    </div>
-                    
-                    <div class="minimalist-post" data-tags="Society">
-                        <div class="minimalist-post-header">
-                            <a href="#" class="minimalist-post-title">Low trust society</a>
-                            <div class="minimalist-post-date">MAR 10, 2025</div>
-                        </div>
-                        <div class="minimalist-post-excerpt">As digital verification becomes the norm and human interactions decrease, we're building systems that assume dishonesty as the default.</div>
-                        <div class="minimalist-post-tags">
-                            <span class="post-tag">Society</span>
-                        </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
-
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/priyanka-gpta" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/priyanka-gpta/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:yanka.gupta9@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://x.com/priyanka_gpta/" target="_blank" aria-label="X">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+        <p>© 2025 Priyanka Gupta</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
