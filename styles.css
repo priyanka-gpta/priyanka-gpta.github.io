@@ -6,6 +6,7 @@
     --background-color: #fff;
     --text-color: #222;
     --accent-color: #2e6ad1;
+    --header-color: #00264D;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -82,7 +83,7 @@ main {
 
 /* Page heading styles */
 h1 {
-    color: var(--primary-color);
+    color: var(--header-color);
     margin-bottom: 1rem;
 }
 
