@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search-input');
     const articleItems = document.querySelectorAll('.article-item');
     const yearSections = document.querySelectorAll('.year-section');
-    
-    searchInput.addEventListener('input', function() {
+    if(searchInput) {
+        searchInput.addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase().trim();
         
         if (searchTerm === '') {
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 section.style.display = 'none';
             }
         });
-    });
+    })};
 
 document.addEventListener('DOMContentLoaded', function() {
     // Theme toggle functionality
