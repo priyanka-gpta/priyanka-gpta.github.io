@@ -6,6 +6,8 @@
     <title>Priyanka Gupta</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/script.js"></script>
 </head>
 <body>
     <header>
@@ -19,125 +21,14 @@
         </nav>
     </header>
     
-    <h1>Thoughts & Notes</h1>
+    <main>
+        <h1>Thoughts & Notes</h1>
         <p>An archive of my thoughts, experiences, and observations.</p>
-
-        <!-- Search box -->
         <div class="search-container">
             <input type="text" id="search-input" class="search-input" placeholder="Search thoughts...">
             <span class="search-icon">🔍</span>
         </div>
-
-        <!-- 2025 -->
-
-        <!-- 2024 -->
-        <div class="year-section expanded">
-            <div class="year-header">
-                <h2>2024</h2>
-            </div>
-            <div class="year-content">
-                <ul class="article-list">
-                    <li class="article-item">
-                        <div class="article-meta">
-                            May 30
-                        </div>
-                        <div class="article-content">
-                            <h3 class="article-title">
-                                <a href="/_posts/how-difficult-is-showing-up.html">How difficult is showing up?</a>
-                            </h3>
-                            <div class="article-tags">
-                                <span class="article-tag">Experience</span>
-                                <span class="article-tag">Personal</span>
-                            </div>
-                            <div class="article-summary">
-                                That inner dialogue might not always be your friend.
-                            </div>
-                        </div>
-                    </li>
-                    <li class="article-item">
-                        <div class="article-meta">
-                            May 28
-                        </div>
-                        <div class="article-content">
-                            <h3 class="article-title">
-                                <a href="/_posts/day-trading.html">10 Days of Day Trading</a>
-                            </h3>
-                            <div class="article-tags">
-                                <span class="article-tag">Experience</span>
-                                <span class="article-tag">Personal</span>
-                            </div>
-                            <div class="article-summary">
-                                After quitting, the first thing I tried was the stock market.
-                            </div>
-                        </div>
-                    </li>
-                    <li class="article-item">
-                        <div class="article-meta">
-                            Jan 19
-                        </div>
-                        <div class="article-content">
-                            <h3 class="article-title">
-                                <a href="/_posts/what-is-normal-relationship.html">What is a normal relationship?</a>
-                            </h3>
-                            <div class="article-tags">
-                                <span class="article-tag">Observation</span>
-                                <span class="article-tag">Personal</span>
-                            </div>
-                            <div class="article-summary">
-                                Humans instinctively react to challenges based on memory or experience.
-                            </div>
-                        </div>
-                    </li>
-                    <li class="article-item">
-                        <div class="article-meta">
-                            Jan 11
-                        </div>
-                        <div class="article-content">
-                            <h3 class="article-title">
-                                <a href="/_posts/quitting-job-to-start-your-business.html">Quitting Job To Start Your Business? Um.</a>
-                            </h3>
-                            <div class="article-tags">
-                                <span class="article-tag">Reflection</span>
-                                <span class="article-tag">Personal</span>
-                            </div>
-                            <div class="article-summary">
-                                My perception of how things would unfold and far away from reality?
-                            </div>
-                        </div>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-
-        <!-- 2023 -->
-        <div class="year-section expanded">
-            <div class="year-header">
-                <h2>2023</h2>
-            </div>
-            <div class="year-content">
-                <ul class="article-list">
-                    <li class="article-item">
-                        <div class="article-meta">
-                            Feb 12
-                        </div>
-                        <div class="article-content">
-                            <h3 class="article-title">
-                                <a href="/_posts/addition-or-subtraction.html">What do you prefer - Addition or Subtraction?</a>
-                            </h3>
-                            <div class="article-tags">
-                                <span class="article-tag">Observation</span>
-                                <span class="article-tag">Personal</span>
-                            </div>
-                            <div class="article-summary">
-                                One of the interesting finds were that people preferred addition over subtraction..
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
+        <div id="blog-list"> </div>
     </main>
     <footer>
         <div class="social-icons">
@@ -150,6 +41,6 @@
         </div>
         <p>© 2025 Priyanka Gupta</p>
     </footer>
-    <script src="/script.js"></script>
+    
 </body>
 </html>
