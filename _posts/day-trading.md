@@ -10,4 +10,4 @@ We had a model that provided ticker outcomes based on opening market prices so i
 
 I chose Zerodha, made five buy and sell orders, and my entire day from 9 AM to 3:30 PM disappeared in a blink. Mind you, I wasn’t trading non-stop but strategizing my exits. That is it. The rush was incredible!
 
-This routine continued for 10 days, and I was profitable overall. I learned a lot and found it somewhat fun, but didn’t like how my entire mornings just disappeared. I was on a full-time break so I made a conscious choice to explore
+This routine continued for 10 days, and I was profitable overall. I learned a lot and found it somewhat fun, but didn’t like how my entire mornings just disappeared. I was on a full-time break so I made a conscious choice to explore other interests.
