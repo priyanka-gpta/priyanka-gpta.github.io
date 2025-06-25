@@ -104,7 +104,7 @@ async function loadBlogPosts() {
     console.log('blog-list found');
 
     // Load index.json
-    const res = await fetch('_posts/index.json');
+    const res = await fetch('posts/index.json');
     const posts = await res.json();
 
     // Sort posts by date descending
@@ -113,7 +113,7 @@ async function loadBlogPosts() {
     blogList.innerHTML = '';
     for (const post of posts) {
         // Fetch markdown content
-        const mdRes = await fetch(`_posts/${post.file}`);
+        const mdRes = await fetch(`posts/${post.file}`);
         const mdText = await mdRes.text();
 
         // Convert markdown to HTML (requires marked.js)
