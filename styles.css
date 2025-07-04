@@ -268,9 +268,26 @@ h1 {
 /* Card styles - for Projects */
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on desktop */
+    gap: 20px;
     margin-top: 30px;
+}
+
+/* Responsive: 1 card per row on mobile */
+@media (max-width: 900px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-thumbnail {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+    background: #eee;
+    display: block;
+    margin-bottom: 15px;
 }
 
 .card {
