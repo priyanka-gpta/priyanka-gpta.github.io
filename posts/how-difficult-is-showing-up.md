@@ -32,4 +32,4 @@ Now, you are aware of what kind of dialogues pop up. When you are out there on y
 
 The change in your inner dialogues will come over a period of time with positive reinforcements.
 
-But it is up to you to SNIP at the moment and SNAP out of
+But it is up to you to SNIP at the moment and SNAP out of it.
