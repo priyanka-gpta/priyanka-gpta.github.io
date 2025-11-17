@@ -440,16 +440,23 @@ footer {
     text-align: center; /* fallback if figcaption isn't block-centered */
 }
 
-.figure-center img {
-    max-width: 100%;
+.figure-center img.center {            /* ensure image sizing when .center is present */
+    width: 50%;
+    max-width: 480px;                 /* limit on very wide screens */
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-.figure-center .figure-caption {
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
-    color: #555;
+.figure-center .figure-caption {      /* make caption align and readable */
+    display: block;
+    width: 50%;
+    max-width: 480px;
+    margin: 0.5rem auto 1rem;
+    text-align: center;
+    color: var(--secondary-color);
     font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.25;
+    background: transparent;
 }
