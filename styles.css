@@ -96,8 +96,8 @@ h1 {
 
 /* Post styles - for Home page */
 .post {
-    margin-bottom: 40px;
-    padding-bottom: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -379,7 +379,7 @@ h1 {
 
 /* Footer styles */
 footer {
-    margin-top: 40px;
+    margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid var(--border-color);
     color: var(--secondary-color);
