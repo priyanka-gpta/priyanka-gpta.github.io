@@ -108,7 +108,7 @@ h1 {
 .post-title {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: var(--primary-color);
+    color: var(--header-color);
 }
 
 .post-meta {
@@ -433,4 +433,23 @@ footer {
 .table-container {
     box-sizing: border-box;
     border-radius: 1px;
+}
+
+.figure-center {
+    margin: 1.25rem 0;
+    text-align: center; /* fallback if figcaption isn't block-centered */
+}
+
+.figure-center img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.figure-center .figure-caption {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #555;
+    font-style: italic;
 }
