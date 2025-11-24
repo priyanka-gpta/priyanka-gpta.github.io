@@ -460,3 +460,41 @@ footer {
     line-height: 1.25;
     background: transparent;
 }
+
+/* Mobile Responsive Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit width on larger screens */
+    margin: 0 auto; /* Center the button */
+    background-color: var(--accent-color); /* Use accent color from your theme */
+    color: white; /* Text color */
+}
+
+.btn:hover {
+    background-color: #2c5a9a; /* Darker shade of the accent color for hover effect */
+    transform: translateY(-2px);
+}
+
+/* Primary button style */
+.btn.primary {
+    background-color: var(--accent-color); /* Use accent color */
+}
+
+.btn.primary:hover {
+    background-color: #2c5a9a; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .btn {
+        padding: 1rem; /* Increase padding for better touch targets */
+        font-size: 1.1rem; /* Slightly larger text */
+    }
+}
